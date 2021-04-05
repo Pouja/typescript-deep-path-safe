@@ -1,0 +1,30 @@
+{
+  "name": "typescript-deep-path-safe",
+  "version": "1.0.0",
+  "description": "Collection of generics to make string paths type safe",
+  "main": "index.d.ts",
+  "devDependencies": {
+    "lodash": "4.17.21",
+    "tsd": "0.14.0",
+    "typescript": "4.2.3"
+  },
+  "Dependencies": {},
+  "scripts": {
+    "test": "tsd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pouja/typescript-deep-path-safe.git"
+  },
+  "keywords": [
+    "typescript",
+    "generics",
+    "type-safe"
+  ],
+  "author": "Pouja Nikray",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Pouja/typescript-deep-path-safe/issues"
+  },
+  "homepage": "https://github.com/Pouja/typescript-deep-path-safe#readme"
+}
