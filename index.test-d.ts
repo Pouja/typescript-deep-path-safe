@@ -15,8 +15,8 @@ interface TestClass {
     sum: number;
     other: null;
   }[];
-  lol: {
-    deep: string[];
+  deep: {
+    arr: string[];
   },
   deeplvl1: {
     deeplvl2: {
@@ -42,9 +42,9 @@ expectType<boolean>(get(obj,'nested.b.c'));
 expectType<number[]>(get(obj,'arr'));
 expectType<number>(get(obj,'arr[13]'));
 expectType<null>(get(obj,'nestedArr[3].other'));
-expectType<string[]>(get(obj,'lol.deep'));
-expectType<string>(get(obj,'lol.deep[333]'));
-expectType<number>(get(obj,'lol.deep[333].length'));
+expectType<string[]>(get(obj,'deep.deep'));
+expectType<string>(get(obj,'deep.arr[333]'));
+expectType<number>(get(obj,'deep.arr[333].length'));
 expectType<boolean>(get(obj,'nested["b"]["c"]'));
 expectType<never>(get(obj,''));
 expectType<number>(get(obj,'', 3));
